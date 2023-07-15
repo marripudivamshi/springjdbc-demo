@@ -1,8 +1,5 @@
 package com.project.example.springjdbcdemo.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-
 public class Course {
 	
 	private long id;

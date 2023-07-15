@@ -24,20 +24,20 @@ public class SpringJdbcDemoApplication {
 	}
 
 	private void createCourse(SpringJdbcDAO springJdbcDao) {
-		Course course1 = new Course(1, "AWS", "RAMASWAMY");
-		Course course2 = new Course(2, "AWS", "RAMASWAMY");
-		Course course3 = new Course(3, "AWS", "RAMASWAMY");
+		Course course1 = new Course(1, "AWS", "Ramaswamy");
+		Course course2 = new Course(2, "Azure", "Rambo");
+		Course course3 = new Course(3, "GCP", "Milano");
 		springJdbcDao.save(course1);
 		springJdbcDao.save(course2);
 		springJdbcDao.save(course3);
 		System.out.println("save completed");
 		
-		springJdbcDao.deleteById(1);
-		System.out.println("user 8 deleted");
+		springJdbcDao.deleteById(2);
+		System.out.println("user 1 deleted");
 		
-		springJdbcDao.findById(2);
+		springJdbcDao.findById(1);
 		springJdbcDao.findById(3);
-		System.out.println("user 9,10 found");
+		System.out.println("user 1,3 found");
 		 
 		
 	}
